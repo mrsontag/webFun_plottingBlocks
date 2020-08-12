@@ -2,42 +2,91 @@
 *{
     margin: 0px;
     padding: 0px;
-   }
-   #wrapper{
+}
+
+#wrapper{
     width: 950px;
     background-color: silver;
     margin: 0px auto;
     padding: 15px;
-   }
-   #header{
+}
+
+#header{
     height: 150px;
     background-color: green;
-   }
-   #navigation{
+}
+
+
+#navigation{
     height: 300px;
     width: 200px;
     background-color: blue;
     margin: 15px 15px 0px 0px;
     display:inline-block;
-   }
-   #main_content{
-    height: 400px;
-    width: 730px;
+}
+
+#main_content{
+    min-height: 400px;
     background-color: red;
     margin-top: 15px;
     display:inline-block;
     vertical-align: top;
-   }
-   .subcontents{
+}
+
+.subcontents{
     height: 200px;
     width: 210px;
     background-color: yellow;
     display:inline-block;
     margin:10px 0px 10px 10px;
-   }
-   #advertisement{
+}
+
+#advertisement{
     height: 120px;
     width: 660px;
     background-color: purple;
     margin: 15px 10px;
-   }
+}
+
+@media only screen and (max-width: 480px) {
+    #navigation {
+        display: none;
+    }
+    #main_content {
+        width:100%;
+    }
+    .subcontents {
+        width: 95%;
+    }
+    #advertisement{
+        width: 95%;
+    }
+}
+
+
+@media only screen and (min-width: 481px) {
+    #navigation {
+        display:none;
+    }
+
+    #main_content {
+        width:100%;
+    }
+    .subcontents {
+        width: 45%;
+    }
+    #advertisement{
+        width: 95%;
+    }
+}
+@media only screen and (min-width: 1024px) {
+    #navigation {
+        display:inline-block;
+    }
+    #main_content {
+        width:730px;
+    }
+    .subcontents {
+        width: 210px;
+    }
+}
